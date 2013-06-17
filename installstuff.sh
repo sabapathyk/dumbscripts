@@ -24,6 +24,9 @@ apt-get -y install kvm virt-manager virtualbox-ose
 # Other packages
 apt-get -y install centerim irssi camorama exif testdisk elinks lynx
 
+# Utilities
+apt-get -y install bc units
+
 # To list manually installed packages
 # aptitude search '?installed ?not(?automatic)'
 
