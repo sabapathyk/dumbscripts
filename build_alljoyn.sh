@@ -7,7 +7,8 @@
 #fi
 
 
-#== Install dependencies
+#== Common dependencies
+#== Install dependencies for 32bit
 sudo apt-get -y install gcc-multilib g++-multilib libc6-i386 libc6-dev-i386 libssl-dev:i386 g++ pkg-config scons curl git-core
 curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > repo
 sudo cp repo /usr/local/bin
@@ -55,3 +56,7 @@ export CLASSPATH="/usr/share/java/junit4.9.jar"
 export GECKO_BASE=~/xulrunner-sdk
 pushd $HOME/alljoyn
 scons OS=linux CPU=x86 VARIANT=release
+
+
+#== TODO
+#Clear junk
